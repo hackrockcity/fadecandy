@@ -319,6 +319,7 @@ void _init(void)
 
 char *__brkval = (char *)&_ebss;
 
+#if 0
 void * _sbrk(int incr)
 {
         //static char *heap_end = (char *)&_ebss;
@@ -369,3 +370,4 @@ void __cxa_guard_release(int *g)
 {
 }
 
+#endif
